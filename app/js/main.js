@@ -3,5 +3,11 @@ $(function (){
     dots: true,
     arrows: false,
     autoplay: true,
+    autoplaySpeed: 2000,
+    fade: true,
   });
+  
+
+
+  var mixer = mixitup(".weeks-products__items");
 });

@@ -20,3 +20,36 @@ body {
 main {
   flex-grow: 1;
 }
+
+
+.title {
+  font-size: 36px;
+  @extend %dmsans-700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-btn__box {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.filter__btn {
+  font-size: 16px;
+  @extend %dmsans-700;
+  color: #8b8b8b;
+}
+.filter__btn + .filter__btn {
+  margin-left: 30px;
+}
+
+.title-products {
+  @extend %dmsans-500;
+  color: #243f4d;
+  margin-bottom: 15px;
+}
+
+.price {
+  @extend %dmsans-700;
+  color: #a3bbc8;
+}
