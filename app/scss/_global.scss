@@ -1,4 +1,4 @@
-html, 
+html,
 body {
   height: 100%;
 }
@@ -8,7 +8,6 @@ body {
   @extend %rubik-500;
   display: flex;
   flex-direction: column;
-  
 }
 
 .container {
@@ -20,7 +19,6 @@ body {
 main {
   flex-grow: 1;
 }
-
 
 .title {
   font-size: 36px;
@@ -34,7 +32,8 @@ main {
   margin-bottom: 80px;
 }
 
-.filter__btn {
+.filter__btn,
+.filter__btn-two {
   font-size: 16px;
   @extend %dmsans-700;
   color: #8b8b8b;
@@ -52,4 +51,13 @@ main {
 .price {
   @extend %dmsans-700;
   color: #a3bbc8;
+}
+
+.weeks-products__wrapper,
+.new-design__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  max-width: 1170px;
+  margin: 0 auto;
 }

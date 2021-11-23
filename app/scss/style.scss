@@ -343,14 +343,6 @@
 
 .weeks-products {
   padding: 65px 0 80px;
-  // background-color: #fafafa;
-  &__items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px 40px;
-    margin: 0 auto;
-    max-width: 1170px;
-  }
   &__item {
     background-color: #fff;
     border-radius: 10px;
@@ -411,13 +403,6 @@
     margin-bottom: 180px;
     margin-right: 40px;
   }
-  &__title {
-    @extend %dmsans-700;
-    font-size: 26px;
-    line-height: 32px;
-    color: #243f4d;
-    margin-bottom: 10px;
-  }
   &__text {
     line-height: 30px;
     @extend %rubik-400;
@@ -469,5 +454,34 @@
 .mixitup-control-active {
   color: #1a1a1a;
 }
+
+
+.new-design {
+  &__item {
+    width: 370px;
+    height: 245px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    padding-left: 35px;
+    object-fit: cover;
+  }
+  &__item-title {
+    @extend %dmsans-700;
+    font-size: 20px;
+    width: 175px;
+    margin-bottom: 20px;
+  }
+  &__item-desc {
+    @extend %dmsans-700;
+    color: #a3bbc8;
+  }
+}
+
+
+
+
+
 
 @import "media";
