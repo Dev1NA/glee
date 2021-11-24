@@ -6,43 +6,6 @@ $(function (){
     autoplaySpeed: 2000,
     fade: true,
   });
-  
-
-//  var containerEl1 = document.querySelector('[data-ref="weeks-products__items"]');
-//  var containerEl2 = document.querySelector('[data-ref="new-design__items"]');
- 
-// console.log(containerEl1);
-
-//  var mixerOne = mixitup(containerEl1, {
-//    controls: {
-//         scope: 'local',
-//     },
-//  });
-
-//  var mixerTwo = mixitup(containerEl2, {
-//    controls: {
-//         scope: 'local',
-//     },
-//  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
           var containerEl1 = document.querySelector('[data-ref="container-1"]');
           var containerEl2 = document.querySelector('[data-ref="container-2"]');
@@ -55,20 +18,5 @@ $(function (){
 
           var mixer1 = mixitup(containerEl1, config);
           var mixer1 = mixitup(containerEl2, config);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });

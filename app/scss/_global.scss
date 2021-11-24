@@ -61,3 +61,7 @@ main {
   max-width: 1170px;
   margin: 0 auto;
 }
+
+.weeks-products__wrapper {
+  grid-template-columns: repeat(4, 1fr);
+}
