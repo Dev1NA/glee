@@ -70,6 +70,16 @@ main {
   grid-template-columns: repeat(3, 1fr);
 } 
 
+.shop-products__wrapper2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weeks-products__item2 {
+  width: 870px;
+  width: 100%;
+}
+
 .filter-title {
   display: inline-block;
   font-size: 18px;

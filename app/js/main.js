@@ -20,6 +20,13 @@ $(function (){
     readOnly: true,
     spacing: "8px",
   });
+  $(".list2-item__star").rateYo({
+    starWidth: "20px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+    spacing: "8px",
+  });
 
 
 
