@@ -1,0 +1,91 @@
+.header {
+  padding: 45px 0;
+  @extend %rubik-500;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  // margin-right: 485px;
+  font-size: 26px;
+  line-height: 58px;
+  color: #436372;
+  &__img {
+    padding-right: 10px;
+  }
+}
+
+.menu {
+  // margin-right: 335px;
+  &__list {
+    display: flex;
+  }
+  &__list-link {
+    color: #234969;
+  }
+  &__list-item + .menu__list-item {
+    margin-left: 35px;
+  }
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  &__bg {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__search {
+    background-color: #edf1f4;
+    margin-right: 20px;
+  }
+  &__heart {
+    position: relative;
+    // padding-right: 50px;
+  }
+  &__cart {
+    position: relative;
+  }
+  &__menu {
+    background-color: #a3bbc8;
+  }
+  &__group-links {
+    width: 178px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 40px;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #fcd7b6;
+    margin-right: 20px;
+    font-size: 10px;
+  }
+  &__border {
+    height: 32px;
+    border: 1px solid #fde7d3;
+  }
+  &__num {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    background-color: #fff;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

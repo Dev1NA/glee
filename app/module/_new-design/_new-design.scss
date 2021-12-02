@@ -1,0 +1,22 @@
+.new-design {
+  &__item {
+    width: 370px;
+    height: 245px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    padding-left: 35px;
+    object-fit: cover;
+  }
+  &__item-title {
+    @extend %dmsans-700;
+    font-size: 20px;
+    width: 175px;
+    margin-bottom: 20px;
+  }
+  &__item-desc {
+    @extend %dmsans-700;
+    color: #a3bbc8;
+  }
+}

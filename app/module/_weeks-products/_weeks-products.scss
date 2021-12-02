@@ -1,0 +1,112 @@
+.weeks-products {
+  padding: 65px 0 80px;
+  &__item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    width: 270px;
+    height: 380px;
+  }
+  &__image {
+    object-fit: cover;
+  }
+  &__img-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  &__link-box {
+    display: flex;
+    position: absolute;
+    display: none;
+    transition: all 0.7s;
+  }
+  &__img-box:hover {
+    .link-box {
+      display: flex;
+      transition: all 0.7s;
+    }
+  }
+  &__link + &__link {
+    margin-left: 20px;
+  }
+  &__container {
+    max-width: 1770px;
+    margin: 0 auto;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__lamps {
+    margin-top: 185px;
+  }
+  &__left,
+  &__right {
+    width: 870px;
+    max-height: 390px;
+    background-color: #feefe2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 150px;
+  }
+  &__img {
+    margin-bottom: 180px;
+    margin-right: 40px;
+  }
+  &__text {
+    line-height: 30px;
+    @extend %rubik-400;
+    color: #243f4d;
+    width: 335px;
+    margin-bottom: 30px;
+  }
+  &__link-info {
+    display: flex;
+    max-width: 180px;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: transparent;
+    color: #436372;
+    border: 1px solid #b3b7b5;
+    border-radius: 3px;
+    &span {
+      font-weight: bold;
+    }
+  }
+}
+.link-bg {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.link-bg:hover {
+  background-color: #a3bbc8;
+  opacity: 1;
+  path {
+    fill: #fff;
+    transition: all 0.3s;
+  }
+}
+
+.filter__btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.mixitup-control-active {
+  color: #1a1a1a;
+}

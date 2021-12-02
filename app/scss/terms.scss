@@ -1,0 +1,53 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+@import "../module/_header/_header";
+@import "../module/_footer/_footer";
+@import "../module/_top/_top";
+@import "../module/_news/_news";
+@import "../module/_partners/_partners";
+
+
+
+.terms {
+  padding-top: 110px;
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__title {
+    color: #243f4d;
+    font-size: 24px;
+    line-height: 40px;
+    @extend %dmsans-500;
+    margin-bottom: 25px;
+  }
+  &__list {
+    position: relative;
+    margin-bottom: 70px !important;
+  }
+  &__list-item {
+    counter-increment: my-counter;  
+    padding-left: 35px;
+    color: #243f4d;
+    line-height: 30px;
+    @extend %rubik-400;
+    & + .terms__list-item {
+      margin-top: 30px;
+    }
+    &::before {
+      padding-right: 30px;
+      content: '0' counter(my-counter) '.';
+      position: absolute;
+      left: 0;
+    }
+  }
+  &__text {
+    color: #243f4d;
+    line-height: 30px;
+    @extend %rubik-400;
+    margin-bottom: 70px;
+  }
+}

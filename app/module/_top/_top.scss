@@ -1,0 +1,42 @@
+.top {
+  padding: 30px 0;
+  background-color: #edf1f4;
+  &-title {
+    text-align: center;
+    font-size: 36px;
+    @extend %rubik-400;
+    margin-bottom: 10px;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    position: relative;
+    color: #979ba0;
+    padding-right: 18px;
+    &::after {
+      content: "/";
+      position: absolute;
+      right: 5px;
+      top: 2px;
+    }
+    &:last-child {
+      padding-right: 0;
+      &::after {
+        display: none;
+        padding-right: 0;
+      }
+    }
+  }
+  &__link {
+    font-size: 14px;
+    color: #979ba0;
+    line-height: 24px;
+  }
+}
