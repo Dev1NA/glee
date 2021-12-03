@@ -20,3 +20,34 @@
     color: #a3bbc8;
   }
 }
+
+
+@media (max-width: 1250px) {
+  .new-design {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .new-design {
+    &__item {
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .new-design {
+     &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item {
+      height: 350px;
+    }
+  }
+}

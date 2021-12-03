@@ -1,5 +1,5 @@
 .popup {
-  width: 1899px;
+  max-width: 1899px;
   height: 500px;
   margin: 0 auto;
   object-fit: cover;
@@ -9,4 +9,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@media (max-width: 1200px) {
+  .popup {
+    height: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .popup {
+    height: 250px;
+  }
 }

@@ -105,3 +105,19 @@ main {
   width: 500px;
   height: 335px;
 }
+
+
+@media (max-width: 600px) {
+  .filter-btn {
+    &__box {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .filter__btn {
+    padding-bottom: 25px;
+  }
+  .filter__btn + .filter__btn {
+    margin-left: 0;
+  }
+}
