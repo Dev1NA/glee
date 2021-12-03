@@ -1,5 +1,18 @@
 $(function (){
 
+  $(".footer-top__title-nav").on('click', function (){
+    $(".footer-top__list-nav").slideToggle();
+  });
+
+  $(".footer-top__title-nav2").on("click", function () {
+    $(".footer-top__list-nav2").slideToggle();
+  });
+
+
+  $(".menu__btn").on('click', function (){
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
 
   $(".related-products__items").slick({
     
