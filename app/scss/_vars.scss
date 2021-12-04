@@ -24,3 +24,11 @@ $footerFontColor: #7b7b7b;
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
 }
+
+%input-reset {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}

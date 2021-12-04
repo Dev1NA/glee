@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/index.min.css" />
     <title>Glee</title>
   </head>
   <body>
-    <header class="header">
+   
+   <header class="header">
       <div class="container">
         <div class="header__inner">
           <a class="logo" href="#">
             <img class="logo__img" src="images/logo.png" alt="" />
             <h2 class="logo-text">Glee.</h2>
           </a>
-
+          <button class="menu__btn">
+            <span></span>
+          </button>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__list-item">
@@ -83,9 +86,9 @@
         </div>
       </div>
     </header>
-
-
+  
     <main class="main">
+      
       <section class="top-slider">
         <div class="container top-slider__container">
           <div class="top-slider__inner">
@@ -179,25 +182,26 @@
         </div>
       </section>
 
-
       <section class="weeks-products">
         <div class="container">
           <h2 class="title weeks-products__title">
             Products of the week
           </h2>
-          <div class="weeks-products__filter-btn filter-btn__box">
-            <button class="filter__btn" data-filter="all" type="button">All</button>
-            
-            <button class="filter__btn" data-filter=".furnitures" type="button">Furnitures</button>
-            
-            <button class="filter__btn" data-filter=".chairs" type="button">Chairs</button>
-            
-            <button class="filter__btn" data-filter=".lighting" type="button">Lighting</button>
-            
-            <button class="filter__btn" data-filter=".decor" type="button">Decor</button>
-          </div>
+          
+          <div class="weeks-products__items" data-ref="container-1">
+            <div class="weeks-products__filter-btn filter-btn__box">
+              <button class="filter__btn" data-filter="all" type="button">All</button>
+              
+              <button class="filter__btn" data-filter=".furnitures" type="button">Furnitures</button>
+              
+              <button class="filter__btn" data-filter=".chairs" type="button">Chairs</button>
+              
+              <button class="filter__btn" data-filter=".lighting" type="button">Lighting</button>
+              
+              <button class="filter__btn" data-filter=".decor" type="button">Decor</button>
+            </div>
+            <div class="weeks-products__wrapper">
 
-          <div class="weeks-products__items">
             <div class="weeks-products__item mix chairs">
               <div class="weeks-products__img-box">
                 <img class="weeks-products__image" src="images/weeks-products/1.png" alt="weeks products">
@@ -541,6 +545,8 @@
                 </div>
               </div>
             </div>
+
+            </div>
           </div>
         </div>
         <div class="weeks-products__lamps">
@@ -571,7 +577,7 @@
                   </h4>
                   <p class="weeks-products__text">
                     50W 8000lm Compact Size for HID 
-                    StreetLightReplacementLEDCornLight
+                    Street Light Replacement LEDCorn Light
                   </p>
                   <a class="weeks-products__link-info" href="#">
                     View More
@@ -583,11 +589,222 @@
           </div>
         </div>
       </section>
-    </main>
+
+      <section class="new-design">
+        <div class="container">
+          <h4 class="title">
+            New Design
+          </h4>
+          <div class="new-design__items" data-ref="container-2">
+           <div class="new-design__filter-box filter-btn__box">
+  
+             <button class="filter__btn" data-filter="all" type="button">All</button>
+              
+              <button class="filter__btn" data-filter=".furnitures" type="button">Furnitures</button>
+              
+              <button class="filter__btn" data-filter=".chairs" type="button">Chairs</button>
+              
+              <button class="filter__btn" data-filter=".lighting" type="button">Lighting</button>
+              
+              <button class="filter__btn" data-filter=".decor" type="button">Decor</button>
+  
+           </div>
+           <div class="new-design__wrapper">
+
+           
+           <div class="new-design__item mix furnitures" style="background-image: url('images/new-design/1.png');">
+             <h5 class="new-design__item-title">
+               Beat Flat Pendant 
+               Black
+             </h5>
+             <p class="new-design__item-desc">
+                 classic
+             </p>
+           </div>
+
+           <div class="new-design__item mix chairs" style="background-image: url('images/new-design/2.png');">
+             <h5 class="new-design__item-title">
+               Lampe Sur Pieds 
+               Bamboo
+             </h5>
+             <p class="new-design__item-desc">
+                 classic
+             </p>
+           </div>
+
+           <div class="new-design__item mix lighting" style="background-image: url('images/new-design/3.png');">
+             <h5 class="new-design__item-title">
+               Rattan Rocking
+               Chair
+             </h5>
+             <p class="new-design__item-desc">
+                 classic
+             </p>
+           </div>
+
+           <div class="new-design__item mix decor" style="background-image: url('images/new-design/4.png');">
+             <h5 class="new-design__item-title">
+               Rattan Rocking
+               Chair
+             </h5>
+             <p class="new-design__item-desc">
+                 classic
+             </p>
+           </div>
+
+           <div class="new-design__item mix chairs" style="background-image: url('images/new-design/5.png');">
+             <h5 class="new-design__item-title">
+               Rattan Rocking
+               Chair
+             </h5>
+             <p class="new-design__item-desc">
+                 classic
+             </p>
+           </div>
+           
+           <div class="new-design__item mix furnitures" style="background-image: url('images/new-design/6.png');">
+             <h5 class="new-design__item-title">
+               Lampe Sur Pieds 
+               Bamboo
+             </h5>
+             <p class="new-design__item-desc">
+                 classic
+             </p>
+           </div>
+           </div>
+          </div>
+         </div>
+        </div>
+      </section>
+      
+      <div class="popup" style="background-image: url('images/popup.jpg');">
+        <a class="popup-link" data-fancybox href="https://media.w3.org/2010/05/sintel/trailer.mp4">
+          <svg width="127px" height="127px">
+            <path fill-rule="evenodd"  opacity="0.4" fill="rgb(163, 187, 200)"
+              d="M63.500,-0.000 C98.570,-0.000 127.000,28.430 127.000,63.500 C127.000,98.570 98.570,127.000 63.500,127.000 C28.430,127.000 -0.000,98.570 -0.000,63.500 C-0.000,28.430 28.430,-0.000 63.500,-0.000 Z"/>
+            <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+              d="M63.000,14.000 C90.062,14.000 112.000,35.938 112.000,63.000 C112.000,90.062 90.062,112.000 63.000,112.000 C35.938,112.000 14.000,90.062 14.000,63.000 C14.000,35.938 35.938,14.000 63.000,14.000 Z"/>
+            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+             d="M73.684,64.740 L57.640,74.536 C57.139,74.842 56.559,74.997 55.977,74.997 C55.498,74.997 55.017,74.891 54.578,74.680 C53.606,74.210 52.999,73.293 52.999,72.295 L52.999,52.700 C52.999,51.701 53.606,50.783 54.578,50.314 C55.549,49.845 56.727,49.900 57.640,50.457 L73.684,60.255 C74.506,60.757 74.999,61.598 74.999,62.496 C74.999,63.396 74.506,64.237 73.684,64.740 Z"/>
+          </svg>
+        </a>
+      </div>
+
+      <section class="news">
+        <div class="container">
+
+          <div class="news__top">
+            <h3 class="title news__top-title">
+              Our Insights & Articles
+            </h3>
+            <a class="news__link" href="#">
+              View All
+            </a>
+          </div>
+          <div class="news__items">
+            <div class="news__item">
+              <a class="news__item-imglink" href="#">
+                <img class="news__item-img" src="images/news/1.jpg" alt="news image">
+              </a>
+              
+              <div class="news__item-box">
+                <a class="news__item-titlelink" href="#">
+                  <h4 class="news__item-title">
+                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                  </h4>
+                </a>
+                <div class="news__item-info">
+                  <a class="news__item-date" href="#">
+                    28 JANUARY, 2020
+                  </a>
+                  <a class="news__item-author" href="#">
+                    BY ADMIN
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="news__item">
+              <a class="news__item-imglink" href="#">
+                <img class="news__item-img" src="images/news/2.jpg" alt="news image">
+              </a>
+
+              <div class="news__item-box">
+                <a class="news__item-titlelink" href="#">
+                  <h4 class="news__item-title">
+                    Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                  </h4>
+                </a>
+                <div class="news__item-info">
+                  <a class="news__item-date" href="#">
+                    28 JANUARY, 2020
+                  </a>
+                  <a class="news__item-author" href="#">
+                    BY ADMIN
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="news__item">
+              <a class="news__item-imglink" href="#">
+                <img class="news__item-img" src="images/news/3.jpg" alt="news image">
+              </a>
+              <div class="news__item-box">
+                <a class="news__item-titlelink" href="#">
+                  <h4 class="news__item-title">
+                    Rncididunt ut labore et dolore magna aliqua. Ut enim 
+                  </h4>
+                </a>
+                <div class="news__item-info">
+                  <a class="news__item-date" href="#">
+                    28 JANUARY, 2020
+                  </a>
+                  <a class="news__item-author" href="#">
+                    BY ADMIN
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="partners">
+        <div class="partners__container">
+          <ul class="partners__list">
+            <li class="partners__list-item">
+              <a class="partners__list-link" href="#">
+                <img src="images/partners/1.png" alt="" class="partners__list-img">
+              </a>
+            </li>
+            <li class="partners__list-item">
+              <a class="partners__list-link" href="#">
+                <img src="images/partners/2.png" alt="" class="partners__list-img">
+              </a>
+            </li>
+            <li class="partners__list-item">
+              <a class="partners__list-link" href="#">
+                <img src="images/partners/3.png" alt="" class="partners__list-img">
+              </a>
+            </li>
+            <li class="partners__list-item">
+              <a class="partners__list-link" href="#">
+                <img src="images/partners/4.png" alt="" class="partners__list-img">
+              </a>
+            </li>
+            <li class="partners__list-item">
+              <a class="partners__list-link" href="#">
+                <img src="images/partners/5.png" alt="" class="partners__list-img">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+            
+      </main>
 
 
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container">
         <div class="footer-top">
           <div class="footer-top__item footer-top__contact">
             <a class="logo footer-top__logo" href="#">
@@ -607,10 +824,10 @@
           </div>
 
           <div class="footer-top__item footer-top__nav">
-             <h6 class="footer-top__title">
+             <h6 class="footer-top__title footer-top__title-nav">
               Services
             </h6>
-            <ul class="footer-top__list">
+            <ul class="footer-top__list footer-top__list-nav">
               <li class="footer-top__item">
                 <a class="footer-top__link" href="#">
                   About us
@@ -640,10 +857,10 @@
           </div>
 
           <div class="footer-top__item footer-top__nav2">
-            <h6 class="footer-top__title">
+            <h6 class="footer-top__title footer-top__title-nav2">
               Account
             </h6>
-            <ul class="footer-top__list">
+            <ul class="footer-top__list footer-top__list-nav2">
               <li class="footer-top__item">
                 <a class="footer-top__link" href="#">
                   Your Account
@@ -683,26 +900,26 @@
         </div>
         <div class="footer-bottom">
           <p class="footer-bottom__copy">
-            ©2020 CopyRight Example. All rights reserved. 
+            ©2020 CopyRight Example. <span>All rights reserved.</span> 
           </p>
           <ul class="footer-bottom__list">
               <li class="footer-bottom__item">
-                <a class="footer-bottom__link" href=#">
+                <a class="footer-bottom__link" href="#">
                   Home
                 </a>
               </li>
               <li class="footer-bottom__item">
-                <a class="footer-bottom__link" href=#">
+                <a class="footer-bottom__link" href="#">
                   About
                 </a>
               </li>
               <li class="footer-bottom__item">
-                <a class="footer-bottom__link" href=#">
+                <a class="footer-bottom__link" href="#">
                   Blog
                 </a>
               </li>
               <li class="footer-bottom__item">
-                <a class="footer-bottom__link footer-bottom__link-contact" href=#">
+                <a class="footer-bottom__link footer-bottom__link-contact" href="#">
                   Contact
                 </a>
               </li>
@@ -711,6 +928,12 @@
       </div>
     </footer>
 
+
+
+
+    <script>
+  
+    </script>
     <script src="js/main.min.js"></script>
 
   </body>
