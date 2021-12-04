@@ -16,6 +16,7 @@
   &__container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
   }
   &__title {
     color: #243f4d;
@@ -49,5 +50,11 @@
     line-height: 30px;
     @extend %rubik-400;
     margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news {
+    padding-top: 0;
   }
 }

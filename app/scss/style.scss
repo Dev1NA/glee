@@ -51,6 +51,7 @@
     justify-content: space-between;
     padding: 30px 0;
     border-bottom: 1px solid #f6f6f6;
+    flex-wrap: wrap;
   }
   &__link-register {
     display: block;
@@ -68,6 +69,9 @@
     color: #243f4d;
     font-size: 18px;
     @extend %rubik-500;
+  }
+  &__form {
+    padding: 0 20px;
   }
 }
 
@@ -565,6 +569,7 @@
   &__container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
   }
   &__inner {
     display: flex;
