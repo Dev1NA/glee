@@ -80,6 +80,9 @@
   &__inner {
     display: flex;
   }
+  &__inner-btn {
+    display: none;
+  }
   &__container {
     max-width: 1170px;
     margin: 0 auto;
@@ -89,6 +92,7 @@
 .shop-filters {
   min-width: 280px;
   margin-right: 30px;
+  padding-left: 15px;
 }
 .filter-item {
   margin-bottom: 50px;
@@ -513,6 +517,7 @@
     margin-top: 35px;
     color: #243f4d;
     line-height: 30px;
+    padding: 0 15px;
   }
 }
 

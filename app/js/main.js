@@ -1,5 +1,12 @@
 $(function (){
 
+
+  $(".shop__inner-btn").on('click', function (){
+    $('.shop-filters').slideToggle();
+  });
+
+
+
   $(".footer-top__title-nav").on('click', function (){
     $(".footer-top__list-nav").slideToggle();
   });
@@ -44,11 +51,20 @@ $(function (){
     vertical: true,
     draggable: false,
   });
+
   $(".product-slide__big").slick({
     asNavFor: ".product-slide__thumb",
     draggable: false,
     arrows: false,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          draggable: true,
+        },
+      },
+    ],
   });
 
 
